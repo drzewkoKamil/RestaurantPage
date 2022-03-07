@@ -30,13 +30,26 @@ const loadDisplay = function loadDisplayController() {
   bgImg.id = "bg-image";
   bgImg.src = "static/bg.jpg";
   bgImg.alt = "Background image showing Restaurant";
-  const copy = document.createElement("div");
-  copy.classList.add("centered");
-  copy.innerText =
-    "U nas poczujesz prawdziwe smaki kuchni włoskiej. Gotujemy tylko na oryginalnych produktach i przepisach prosto z Włoch";
+  // const copy = document.createElement("div");
+  // copy.classList.add("centered");
+  // copy.innerText =
+  //   "U nas poczujesz prawdziwe smaki kuchni włoskiej. Gotujemy tylko na oryginalnych produktach i przepisach prosto z Włoch";
+  // imgContainer.appendChild(copy);
   imgContainer.appendChild(bgImg);
-  imgContainer.appendChild(copy);
   content.appendChild(imgContainer);
+
+  const divNavRight = document.createElement("div");
+  divNavRight.id = "nav-right";
+  const spanContact = document.createElement("span")
+  spanContact.classList.add("nav-link")
+  spanContact.innerText = "Contact"
+  const spanMenu = document.createElement("span")
+  spanMenu.classList.add("nav-link")
+  spanMenu.innerText = "Menu"
+  divNavRight.appendChild(spanContact)
+  divNavRight.appendChild(spanMenu)
+  nav.appendChild(divNavRight)
+
 };
 
 loadDisplay();

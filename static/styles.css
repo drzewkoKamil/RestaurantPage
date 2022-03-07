@@ -1,0 +1,190 @@
+/*-------------Reset-------------*/
+button {
+  background: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus,
+input:focus {
+  outline: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*-------------Layout-------------*/
+body {
+  line-height: 1.5em;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  height: 100vh;
+}
+
+#home {
+  background-color: #ddd;
+}
+
+#about {
+  background-color: #aaa;
+}
+
+#work {
+  background-color: #888;
+}
+
+#contact {
+  background-color: #666;
+}
+
+/*-------------Helpers-------------*/
+.skew {
+  transform: skew(-20deg);
+}
+
+.un-skew {
+  transform: skew(20deg);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+#Table {
+  font-family: "Montserrat", sans-serif;
+  min-width: 400px;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+}
+#Table td {
+  border: thin solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+#Table th {
+  border: thin solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+#Table tr {
+  border-collapse: collapse;
+}
+
+/*-------------Nav-------------*/
+#nav-wrapper {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+#nav {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  font-family: "PT Serif", serif;
+  height: 4em;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.nav-visible {
+  height: 100%;
+  overflow: auto;
+}
+
+.nav {
+  display: flex;
+  height: 4em;
+  line-height: 4em;
+  flex-grow: 1;
+  background-color: #fff;
+}
+
+.nav-link {
+  background-color: #fff;
+  padding: 0 1em;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #fff;
+}
+
+#title {
+  padding-left: 2em;
+}
+
+h1 {
+  font-family: "PT Serif", serif;
+}
+
+h1.logo {
+  font-weight: 300;
+  font-size: 1.75em;
+  line-height: 0.75em;
+  color: #000;
+}
+h1.logo a:hover a:visited {
+  text-decoration: none;
+  color: #000;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  text-align: center;
+  border-top: 0.5px solid #ddd;
+}
+
+a:link a:visited {
+  text-decoration: none;
+  color: #58a4b0;
+}
+a.active {
+  text-decoration: none;
+  color: #58a4b0;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.btn-nav {
+  color: #58a4b0;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+#bg-image{
+  max-width: 100%;
+  height: auto;
+}
+
+#image-container{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "PT Serif", serif;
+  font-size: larger;
+}
